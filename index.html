@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Cybersecurity Quiz</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="quiz-container">
+    <h1>Cybersecurity Awareness Quiz</h1>
+
+    <div id="difficulty-select">
+      <p>Select Difficulty:</p>
+      <select id="difficulty">
+        <option value="easy">Easy</option>
+        <option value="medium">Medium</option>
+        <option value="hard">Hard</option>
+      </select>
+      <button onclick="startQuiz()">Start Quiz</button>
+    </div>
+
+    <div id="quiz" class="hidden">
+      <div id="timer">Time left: <span id="time">15</span>s</div>
+      <div id="question">Question text</div>
+      <div id="options"></div>
+      <button id="nextBtn" class="hidden">Next</button>
+    </div>
+
+    <div id="result" class="hidden">
+      <h2>Your Score: <span id="score"></span></h2>
+      <h3>Past Score: <span id="storedScore"></span></h3>
+      <div id="feedback"></div>
+      <button onclick="location.reload()">Try Again</button>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
